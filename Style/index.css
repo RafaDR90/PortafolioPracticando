@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Italianno');
 :root {
-    --color-primario: #3498db;
-    --color-fondo: #ecf0f1;
-    --espaciado: 20px;
+  --color-negro: #3f3f3f;
+  --color-naranja: #ef5c0a;
+  --color-gris: #c4c4c4;
+  --color-amarillo: #ffbd13;
 }
   
 * {
@@ -12,31 +13,121 @@
 }
 
 body{
+  background-color: var(--color-negro);
     display: flex;
     overflow: hidden;
 }
 /* NAV */
+nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  height: 100vh;
+}
+.presentacion__container{
+  width: 15vw;
+  height: 20vw;
+  gap: 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .container__fotoMini{
-    margin: 1vw;
-    height: 11vw;
-    width: 11vw;
+  margin-top: 1vw;
+    height: 13vw;
+    width: 13vw;
 }
 .fotoMini{
     border-radius: 50% 10%;
     width: 100%;
     height: 100%;
 }
+/* H1 */
 .NombreNav{
     font-family: 'Italianno', cursive;
+    font-size: 2vw;
+    letter-spacing: 0.3vw;
+    margin-right: 1vw;
+    color: var(--color-naranja);
 }
+/* Menú options--NAV */
+.menuOptions{
+  margin-top: 3vw;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 3vw;
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  transition: .5s ease;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color:var(--color-amarillo);
+  transition: .5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: .5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--color-amarillo);
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+.lineaHorizontal{
+  background-color: var(--color-amarillo);
+  width: 90%;
+  height: 0.3vw;
+  border-radius: 30% ;
+}
+
 /* Linea vertical movil */
 .linea-vertical {
     z-index: 2;
     position: relative;
-    width: 2vw;
+    width: 0.7vw;
     height: 100vh;
-    border-radius: 10%;
-    background-color: red;
+    border-radius: 20%;
+    background-color: var(--color-amarillo);
     transform: translateX(-50%) translateY(-100vh); 
     animation: desplazar 1s ease-in-out forwards; 
   }

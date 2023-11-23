@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/nav.css">
+    <link rel="stylesheet" href="Style/main.css">
 </head>
 <body>
     <nav>
@@ -14,28 +15,78 @@
             <div class="lineaHorizontal"></div>
         </div>
         <div class="menuOptions">
-            <a class="btn" href="">About</a>
-            <a class="btn" href="">Skill</a>
-            <a class="btn" href="">Design</a>
-            <a class="btn" href="">Contact</a>
-            <a class="btn" href="">Reviews</a>
+            <a class="button" class="border-el-btn">
+                About
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </a>
+            <a class="button" class="border-el-btn">
+                Skill
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </a>
+            <a class="button" class="border-el-btn">
+                Design
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </a>
+            <a class="button" class="border-el-btn">
+                Contact
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </a>
+            <a class="button" class="border-el-btn">
+                Reviews
+                <span class="b1"></span>
+                <span class="b2"></span>
+                <span class="b3"></span>
+                <span class="b4"></span>
+            </a>
+            
+            
+           
         </div>
     </nav>
     <div class="linea-vertical"></div>
     <main>
         <section class="about">
-            <img src="Img/FotoGrande.jpg" alt="Foto panoramica del personaje">
-            <p><span class="miNombreH1">Rafael Delgado</span>Hello! I'm a programmer who has successfully completed a two-year program 
+            <div class="contenedor__fotoGrande"><img class="fotoGrande" src="Img/Grande.png" alt="Foto panoramica del personaje"></div>
+            <p class="texto"><span class="miNombreH1">Rafael Delgado </span>Hello! I'm a programmer who has successfully completed a two-year program 
                 in advanced programming. I'm passionate about what I've learned, and I have a diverse skill set that includes both 
                 backend and frontend development. My primary focus is on frontend development and design. I enjoy creating visually 
                 appealing and user-friendly websites and applications. Welcome to my portfolio, where you can explore some of the 
                 exciting projects I've worked on. Let's dive into the world of coding and design together!</p>
-            <p>
+            <p class="texto">
                 If you have any questions or need to see specific examples of my work, please don't hesitate to get in touch. 
                 I'm excited about the possibility of collaborating on future projects and continuing to develop my skills as 
                 a programmer and designer. Let's discuss your ideas and how we can bring them to life!
             </p>
-            <p><a href="">Contact me</a></p>
+            <p>
+                <button class="c-button c-button--gooey"> Contact me
+                    <div class="c-button__blobs">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    </div>
+                </button>
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                    <defs>
+                      <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                        <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                      </filter>
+                    </defs>
+                  </svg>
+            </p>
         </section>
         <section class="skill">
 

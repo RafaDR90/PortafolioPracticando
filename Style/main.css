@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Italianno');
+@import url('https://fonts.googleapis.com/css?family=Inter');
+:root {
+  --color-negro: #3f3f3f;
+  --color-naranja: #ef5c0a;
+  --color-gris: #c4c4c4;
+  --color-amarillo: #ffbd13;
+}
+
+.about{
+    height: 100vh;
+    width: 69.3vw ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    
+    
+}
+
+.contenedor__fotoGrande{
+    margin-top: 3%;
+    width: 80%;
+    height: 40%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.fotoGrande{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+.miNombreH1{
+    font-family: 'Italianno', cursive;
+    color: white;
+    text-shadow: 2px 2px 4px aqua;
+    font-size: 3vw;
+    vertical-align:25%;
+}
+.texto{
+    color: white;
+    width: 80%;
+}
+/* BOTON CONTACT ME*/
+.c-button {
+    background-color: var(--color-negro);
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .c-button--gooey {
+    color: aqua;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid aqua;
+    border-radius: 0;
+    position: relative;
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+  }
+  
+  .c-button--gooey .c-button__blobs div {
+    background-color: var(--color-naranja);
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+  }
+  
+  .c-button--gooey:hover {
+    color: var(--color-negro);
+  }
+  
+  .c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+  }

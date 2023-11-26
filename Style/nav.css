@@ -18,7 +18,8 @@
 body{
   background:linear-gradient(to right,#001F3F, #1d1d1d, #001F3F);
     display: flex;
-    overflow: hidden;
+    overflow-y: hidden;
+    
 }
 /* NAV */
 nav{
@@ -27,6 +28,8 @@ nav{
   align-items: center;
   width: 30vw;
   height: 100vh;
+  position: sticky; 
+  top: 0;
 }
 .presentacion__container{
   width: 15vw;
@@ -137,8 +140,10 @@ nav{
 
 /* Linea vertical movil */
 .linea-vertical {
+    position: sticky;
+    top: 0;
     z-index: 2;
-    position: relative;
+    
     width: 0.7vw;
     height: 100vh;
     border-radius: 20%;

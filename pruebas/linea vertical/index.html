@@ -1,37 +1,52 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Línea Vertical Animada</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fixed Progress Bar</title>
+  
   <style>
     body {
+      font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+      color: #404040;
+      background: #2a2a2a;
       margin: 0;
-      overflow: hidden; 
     }
 
-    .linea-vertical {
-      position: absolute;
-      left: 20%;
-      top: 0;
-      width: 2px;
-      height: 100vh;
-      background-color: #3498db;
-      transform: translateX(-50%) translateY(-100vh); 
-      animation: desplazar 1s ease-in-out forwards; 
+    .container {
+      margin: 60px auto;
+      width: 400px;
+      text-align: center;
     }
 
-    @keyframes desplazar {
-      0% {
-        transform: translateX(-50%) translateY(-100vh);
-      }
-      100% {
-        transform: translateX(-50%) translateY(0);
-      }
+    .container .progress {
+      margin: 0 auto;
+      width: 400px;
+    }
+
+    .progress {
+      padding: 4px;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+      -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    }
+
+    .progress-bar {
+      height: 16px;
+      border-radius: 4px;
+      background-color: #f2d31b; /* Fijar el color en 75% */
+      width: 75%; /* Fijar el ancho en 75% */
     }
   </style>
 </head>
 <body>
-  <div class="linea-vertical"></div>
+
+  <div class="container">
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+
 </body>
 </html>

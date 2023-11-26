@@ -15,28 +15,28 @@
             <div class="lineaHorizontal"></div>
         </div>
         <div class="menuOptions">
-            <a class="button" class="border-el-btn">
+            <a class="button" class="border-el-btn" href="#about">
                 About
                 <span class="b1"></span>
                 <span class="b2"></span>
                 <span class="b3"></span>
                 <span class="b4"></span>
             </a>
-            <a class="button" class="border-el-btn">
+            <a class="button" class="border-el-btn" href="#skill">
                 Skill
                 <span class="b1"></span>
                 <span class="b2"></span>
                 <span class="b3"></span>
                 <span class="b4"></span>
             </a>
-            <a class="button" class="border-el-btn">
+            <a class="button" class="border-el-btn" href="#design">
                 Design
                 <span class="b1"></span>
                 <span class="b2"></span>
                 <span class="b3"></span>
                 <span class="b4"></span>
             </a>
-            <a class="button" class="border-el-btn">
+            <a class="button" class="border-el-btn" href="#contact">
                 Contact
                 <span class="b1"></span>
                 <span class="b2"></span>
@@ -57,7 +57,7 @@
     </nav>
     <div class="linea-vertical"></div>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="contenedor__fotoGrande"><img class="fotoGrande" src="Img/Grande.png" alt="Foto panoramica del personaje"></div>
             <p class="texto"><span class="miNombreH1">Rafael Delgado </span>Hello! I'm a programmer who has successfully completed a two-year program 
                 in advanced programming. I'm passionate about what I've learned, and I have a diverse skill set that includes both 
@@ -88,11 +88,83 @@
                   </svg>
             </p>
         </section>
-        <section class="skill">
-
+        <section class="skill" id="skill">
+            <h2>Skills</h2>
+            <div class="container">
+                <div class="label">Java</div>
+                <div class="progress">
+                    <div class="progress-bar--java"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="label">JavaScript</div>
+                <div class="progress">
+                    <div class="progress-bar--javascript"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="label">PHP</div>
+                <div class="progress">
+                    <div class="progress-bar--php"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="label">HTML</div>
+                <div class="progress">
+                    <div class="progress-bar--html"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="label">CSS</div>
+                <div class="progress">
+                    <div class="progress-bar--css"></div>
+                </div>
+            </div>
+              
         </section>
-        <section class="design"></section>
-        <section class="contact"></section>
+        <section class="design" id="design">
+            <h2>Design</h2>
+            <div class="proyects">
+                <div class="card">
+                    <img class="fotoCard" src="./Img/proyects/baraja.jpg" alt="foto proyecto">
+                </div>
+                
+                <div class="card">
+                    <img class="fotoCard" src="./Img/proyects/findecurso.png" alt="foto proyecto">
+                </div>
+                <div class="card">
+                    <img class="fotoCard" src="./Img/proyects/libreria.png" alt="foto proyecto">
+                </div>
+                <div class="card">
+                    <img class="fotoCard" src="./Img/proyects/monedero.jpg" alt="foto proyecto">
+                </div>
+                <div class="card">
+                    <img class="fotoCard" src="./Img/proyects/stickynotes.jpg" alt="foto proyecto">
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <form class="formulario" action="#contact">
+                <p class="doble">
+                    <input class="input" type="text" id="firstName" name="firstName" placeholder="First name:" required>
+
+                    <input class="input" type="text" id="lastName" name="lastName" placeholder="Last name:" required>
+                </p>
+                <p>
+                    <input class="inputLargo" type="email" id="email" name="email" placeholder="Email:" required>
+                </p>
+                <p>
+                    <input class="input" type="tel" id="phone" name="phone" placeholder="Phone number:">
+                </p>
+                <p>
+                    <textarea class="inputLargoAncho" id="message" name="message" rows="4" placeholder="Message:" required></textarea>
+                </p>
+                <p class="imputsubmit">
+                    <input type="submit" value="Contact me">
+                </p>
+            </form>
+        </section>
         <section class="reviews"></section>
     </main> 
 </body>

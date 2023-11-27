@@ -1,0 +1,42 @@
+@media screen and (max-width: 800px){
+    *{
+        font-size: 2.5vw;
+    }
+    body{
+        flex-direction: column;
+    }
+    nav{
+        border: solid red;
+        height: 15vh;
+        width: 100vw;
+        flex-direction: row;
+    }
+    .presentacion__container{
+        height: 100%;
+        width: 30%;
+       border: solid orange;
+    }
+    .menuOptions{
+        flex-direction: row;
+        width: 70%;
+        height: 100%;
+        border: solid darkgreen;
+    }
+    .button{
+        font-size: 1.5vw;
+    }
+    #botonContactMe{
+        width: auto;
+        height: auto;
+        font-size: 2.5vw
+    }
+    .linea-vertical{
+        display: none;
+    }
+    /*fuera del nav*/
+    .about{
+        width: 100%;
+        height: 85vh;
+        margin-top: 15vh;
+    }
+}

@@ -59,8 +59,8 @@
   .c-button--gooey {
     color: aqua;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    border: 4px solid aqua;
+    letter-spacing: 0.1vw;
+    border: 0.2vw solid aqua;
     border-radius: 0;
     position: relative;
     transition: all 700ms ease;
@@ -73,8 +73,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    bottom: -3px;
-    right: -1px;
+    /*bottom: -3px;
+    right: -1px;*/
     z-index: -1;
   }
   
@@ -136,7 +136,7 @@
     }
 
     .progress {
-      padding: 4px;
+      padding: 0.2vw;
       background: rgba(255, 255, 255, 0.25);
       border-radius: 6px;
       -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
@@ -194,8 +194,8 @@
 
     /*card*/
     .card {
-      width: 190px;
-      height: 254px;
+      width: 10vw;
+      height: 15vw;
       background: #07182E;
       position: relative;
       display: flex;
@@ -214,7 +214,7 @@
     .card::before {
       content: '';
       position: absolute;
-      width: 100px;
+      width: 6vw;
       background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
       height: 130%;
       animation: rotBGimg 3s linear infinite;
@@ -235,7 +235,6 @@
       content: '';
       position: absolute;
       background: #07182E;
-      ;
       inset: 5px;
       border-radius: 15px;
     }  
@@ -287,4 +286,37 @@
     .doble{
       display: flex;
       gap: 1vw;
+    }
+    .botonformulario{
+      background-color: rgba(255, 0, 0, 0);
+      color: white;
+      border: none;
+      padding: 0.3vw;
+      box-shadow: 0px 0px 10px aqua;
+    }
+    .botonformulario:hover{
+      text-decoration: underline;
+      cursor: pointer;
+      background-color: rgba(0, 255, 255, 0.137);
+    }
+    /*REVIEWS*/
+    .reviews{
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5vw;
+    }
+    .resenaIcono{
+      width: 1.5vw;
+    }
+    .reviewsContainer{
+     display: flex;
+     flex-direction: column;
+     gap: 2vw;
+    } 
+    h2{
+      text-shadow: 2px 2px 4px aqua;
     }

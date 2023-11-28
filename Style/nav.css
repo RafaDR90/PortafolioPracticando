@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Italianno');
 @import url('https://fonts.googleapis.com/css?family=Inter');
 :root {
-  --color-negro: #3f3f3f;
-  --color-naranja: #ef5c0a;
-  --color-gris: #c4c4c4;
-  --color-amarillo: #ffbd13;
+  --color-aqua: rgb(0, 255, 255);
+  --color-white: rgb(255, 255, 255);
+  --color-fondoProgress:rgba(255, 255, 255, 0.25);
+  --color-progressBar:#f2d31b;
+  --color-transparent:rgba(255, 0, 0, 0);
+  --color-aquaTransparent:rgba(0, 255, 255, 0.137);
+  --color-fondoCard:#07182E;
 
 }
   
 * {
+  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -59,8 +63,8 @@ nav{
     font-size: 2vw;
     letter-spacing: 0.3vw;
     margin-right: 1vw;
-    color: white;
-    text-shadow: 2px 2px 4px aqua;
+    color: var(--color-white);
+    text-shadow: 2px 2px 4px var(--color-aqua);
 }
 /* Menú options--NAV */
 .menuOptions{
@@ -68,13 +72,14 @@ nav{
   display: flex;
   flex-direction: column;
   
-  gap: 3vw;
+  gap: 2vw;
   
   height: 60%;
 }
+
 .button {
   text-align: center;
-  color: white;
+  color: var(--color-white);
   outline: none;
   border: none;
   font-size: 1vw;
@@ -86,14 +91,14 @@ nav{
 
 .button:active {
   transform: scale(.98);
-  box-shadow: .1px .1px 2px rgb(191, 170, 170);
+  box-shadow: .1px .1px 2px var(--color-white);
 }
 
 .button span {
   position: absolute;
-  background-color: aqua;
+  background-color: var(--color-aqua);
   transition: .5s;
-  box-shadow: 1px 1px 20px aqua;
+  box-shadow: 1px 1px 20px var(--color-aqua);
 }
 
 .button span:nth-child(1) {
@@ -149,8 +154,8 @@ nav{
     width: 0.7vw;
     height: 100vh;
     border-radius: 20%;
-    background-color: white;
-    box-shadow: 2px 2px 4px aqua;
+    background-color: var(--color-white);
+    box-shadow: 2px 2px 4px var(--color-aqua);
     transform: translateX(-50%) translateY(-100vh); 
     animation: desplazar 1s ease-in-out forwards; 
   }

@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Italianno');
 @import url('https://fonts.googleapis.com/css?family=Inter');
 :root {
-  --color-negro: #3f3f3f;
-  --color-naranja: #ef5c0a;
-  --color-gris: #c4c4c4;
-  --color-amarillo: #ffbd13;
+  --color-aqua: rgb(0, 255, 255);
+  --color-white: rgb(255, 255, 255);
+  --color-fondoProgress:rgba(255, 255, 255, 0.25);
+  --color-progressBar:#f2d31b;
+  --color-transparent:rgba(255, 0, 0, 0);
+  --color-aquaTransparent:rgba(0, 255, 255, 0.137);
+  --color-fondoCard:#07182E;
+  --color-negro:rgb(0, 0, 0);
+  
 }
 
 .about{
@@ -32,19 +37,18 @@
 }
 .miNombreH1{
     font-family: 'Italianno', cursive;
-    color: white;
-    text-shadow: 2px 2px 4px aqua;
+    color: var(--color-white);
+    text-shadow: 2px 2px 4px var(--color-aqua);
     font-size: 3vw;
     vertical-align:25%;
 }
 .texto{
-    color: white;
+    color: var(--color-white);
     width: 80%;
 }
 /* BOTON CONTACT ME*/
 .c-button {
     background-color: var(--color-negro);
-    color: #000;
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
@@ -57,10 +61,10 @@
   }
   
   .c-button--gooey {
-    color: aqua;
+    color: var(--color-aqua);
     text-transform: uppercase;
     letter-spacing: 0.1vw;
-    border: 0.2vw solid aqua;
+    border: 0.2vw solid var(--color-aqua);
     border-radius: 0;
     position: relative;
     transition: all 700ms ease;
@@ -79,7 +83,7 @@
   }
   
   .c-button--gooey .c-button__blobs div {
-    background-color:aqua;
+    background-color:var(--color-aqua);
     width: 34%;
     height: 100%;
     border-radius: 100%;
@@ -113,7 +117,7 @@
   /*SKILLS*/
   .skill{
     display: flex;
-    color: white;
+    color: var(--color-white);
     min-height: 100vh; /* Cambiado de height a min-height */
     overflow-y: auto;
     flex-direction: column;
@@ -137,46 +141,46 @@
 
     .progress {
       padding: 0.2vw;
-      background: rgba(255, 255, 255, 0.25);
+      background: var(--color-fondoProgress);
       border-radius: 6px;
       -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
-      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px aqua;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px var(--color-aqua);
     }
 
     .progress-bar--java {
       height: 1.5vh;
       border-radius: 4px;
-      background-color: #f2d31b; /* Fijar el color en 75% */
+      background-color: var(--color-progressBar); /* Fijar el color en 75% */
       width: 75%; /* Fijar el ancho en 75% */
     }
     .progress-bar--javascript {
       height: 1.5vh;
       border-radius: 4px;
-      background-color: #f2d31b; /* Fijar el color en 75% */
+      background-color: var(--color-progressBar); /* Fijar el color en 75% */
       width: 98%; /* Fijar el ancho en 75% */
     }
     .progress-bar--php {
       height: 1.5vh;
       border-radius: 4px;
-      background-color: #f2d31b; /* Fijar el color en 75% */
+      background-color: var(--color-progressBar); /* Fijar el color en 75% */
       width: 100%; /* Fijar el ancho en 75% */
     }
     .progress-bar--html {
       height: 1.5vh;
       border-radius: 4px;
-      background-color: #f2d31b; /* Fijar el color en 75% */
+      background-color: var(--color-progressBar); /* Fijar el color en 75% */
       width: 95%; /* Fijar el ancho en 75% */
     }
     .progress-bar--css {
       height: 1.5vh;
       border-radius: 4px;
-      background-color: #f2d31b; /* Fijar el color en 75% */
+      background-color: var(--color-progressBar); /* Fijar el color en 75% */
       width: 80%; /* Fijar el ancho en 75% */
     }
 
     /*DESIGN*/
     .design{
-      color: white;
+      color: var(--color-white);
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -196,7 +200,7 @@
     .card {
       width: 10vw;
       height: 15vw;
-      background: #07182E;
+      background: var(--color-fondoCard);
       position: relative;
       display: flex;
       place-content: center;
@@ -207,7 +211,7 @@
     
     .card h2 {
       z-index: 1;
-      color: white;
+      color: var(--color-white);
       font-size: 2em;
     }
     
@@ -215,7 +219,7 @@
       content: '';
       position: absolute;
       width: 6vw;
-      background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+      background-image: linear-gradient(180deg, var(--color-aqua), var(--color-progressBar));
       height: 130%;
       animation: rotBGimg 3s linear infinite;
       transition: all 0.2s linear;
@@ -234,18 +238,19 @@
     .card::after {
       content: '';
       position: absolute;
-      background: #07182E;
+      background: var(--color-fondoCard);
       inset: 5px;
       border-radius: 15px;
     }  
      .card:hover:before {
-      background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+      background-image: linear-gradient(180deg, var(--color-negro), var(--color-white));
       animation: rotBGimg 3.5s linear infinite;
     } 
     .fotoCard{
+      object-fit: cover;
       width: 80%;
       height: 80%;
-      z-index: 2222;
+      z-index: 5;
     }
     /*CONTACT*/
     .contact{
@@ -255,12 +260,12 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      color: white;
+      color: var(--color-white);
     }
     
     .formulario{
       padding: 2vw;
-      box-shadow: 0 0 20px aqua;
+      box-shadow: 0 0 20px var(--color-aqua);
       width: 30vw;
       
       display: flex;
@@ -288,21 +293,21 @@
       gap: 1vw;
     }
     .botonformulario{
-      background-color: rgba(255, 0, 0, 0);
-      color: white;
+      background-color: var(--color-transparent);
+      color: var(--color-white);
       border: none;
       padding: 0.3vw;
-      box-shadow: 0px 0px 10px aqua;
+      box-shadow: 0px 0px 10px var(--color-aqua);
     }
     .botonformulario:hover{
       text-decoration: underline;
       cursor: pointer;
-      background-color: rgba(0, 255, 255, 0.137);
+      background-color: var(--color-aquaTransparent);
     }
     /*REVIEWS*/
     .reviews{
       height: 100vh;
-      color: white;
+      color: var(--color-white);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -318,5 +323,5 @@
      gap: 2vw;
     } 
     h2{
-      text-shadow: 2px 2px 4px aqua;
+      text-shadow: 2px 2px 4px var(--color-aqua);
     }
